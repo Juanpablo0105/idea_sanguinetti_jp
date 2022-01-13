@@ -1,0 +1,187 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+
+/* header */
+
+.header {
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* navbar */
+
+.header__navbar ul {
+  padding: 2rem;
+  list-style-type: none;
+}
+
+.header__navbar li {
+  display: inline-block;
+}
+
+li:hover a{
+  color: #d2d700;
+}
+
+.header__navbar a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.1rem;
+  padding: 1rem;
+}
+
+/* sección estudio */
+
+.estudio {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  padding: 4rem 1rem;
+}
+
+.contenedorImagen {
+  margin-top: 100px;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+ }
+
+ .contenedor h2{
+   font-size: 72px;
+   padding: 150px;
+
+ }
+
+ .contenedor h3{
+   color: rgb(210, 215, 0);
+   font-size: 40px;
+
+
+ }
+
+ .contenedor p{
+   width: 40%;
+   text-align: justify;
+
+ }
+
+ .contenedor input{
+   font-size: 14px;
+   font-weight: 600;
+   color: white;
+   background-color: black;
+   display: inline-block;
+   transition: all .5s;
+   cursor: pointer;
+   padding: 15px 40px !important;
+   text-transform: uppercase;
+   width:  fit-content;
+   text-align: center;
+   margin-top: 10px;
+   margin-bottom: 10px;
+ }
+
+ /* sección servicios */
+
+ .imagenServicios {
+  width: 100%;
+  padding: 50px;
+
+}
+
+.imagenServicios:hover{ 
+filter: grayscale(100%);
+z-index: 5;
+}
+
+
+ .gridPadre {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+      "imagenUno imagenDos imagenTres"
+  ;
+}
+
+.imagenUno {
+  grid-area: imagenUno;
+}
+
+.imagenDos {
+  grid-area: imagenDos;
+}
+
+.imagenTres {
+  grid-area: imagenTres;
+}
+ 
+/* proyectos */
+
+.contenedorProyectos h2{
+  font-size: 72px;
+}
+.contenedorProyectos h3{
+  font-size: 138px;
+  color: rgb(230, 230, 230);
+}
+.contenedorProyectos p{
+  width: 40%;
+  text-align: justify;
+}
+.contenedorProyectos input{
+  font-size: 14px;
+   font-weight: 600;
+   color: white;
+   background-color: black;
+   display: inline-block;
+   transition: all .5s;
+   cursor: pointer;
+   padding: 15px 40px !important;
+   text-transform: uppercase;
+   width:  fit-content;
+   text-align: center;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+
+
+/* footer */
+
+.footer {
+  background-color: black;
+  width: 100%;
+  padding: 20px 0 30px 0;
+  margin: auto;
+  overflow: hidden;
+
+}
+.footer__redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.footer__redes a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  
+}
+
+
