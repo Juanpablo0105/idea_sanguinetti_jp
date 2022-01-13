@@ -46,29 +46,44 @@ li:hover a{
 
 /* sección estudio */
 
+.contenedor {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-85%, -25%);
+
+}
+
 .imagenEstudio {
+  width: 90%;
+  padding: 3%;
   float: right;
-  padding-top: 5%;
 }
 
  .contenedor h2{
    font-size: 72px;
-   margin-left: 20%;
+   margin-left: 10%;
 
  }
 
  .contenedor h3{
    color: rgb(210, 215, 0);
    font-size: 40px;
-   margin-left: 20%;
-
+   margin-left: 10%;
 
  }
 
  .contenedor p{
-   width: 40%;
+   width: 80%;
    text-align: justify;
-   margin-left: 20%;
+   margin-left: 9%;
+   padding: 1%;
 
  }
 
@@ -86,7 +101,7 @@ li:hover a{
    text-align: center;
    margin-top: 10px;
    margin-bottom: 10px;
-   margin-left: 20%;
+   margin-left: 10%;
  }
 
  /* sección servicios */
