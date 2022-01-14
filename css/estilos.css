@@ -207,11 +207,55 @@ z-index: 5;
 
 .contenedorContacto {
   padding-top: 10%;
+  position: relative;
+  display: inline-block;
+  text-align: left;
+}
+
+.textContacto {
+  position: absolute;
+  top: 45%;
+  right: 20%;
+  transform: translate(1%, -25%);  
 }
 
 .imagenContacto {
   width: 100%;
 }
+
+.textContacto h2 {
+  font-size: 62px;
+  margin-left: 6%;  
+}
+
+.textContacto p {
+  width: 80%;
+   text-align: left;
+   margin-left: 6%;
+   padding: 1%; 
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.textContacto input{
+  font-size: 14px;
+   font-weight: 600;
+   color: white;
+   background-color: black;
+   display: inline-block;
+   transition: all .5s;
+   cursor: pointer;
+   padding: 15px 40px !important;
+   text-transform: uppercase;
+   width:  fit-content;
+   text-align: center;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   margin-left: 6%;
+}
+
 
 
 
