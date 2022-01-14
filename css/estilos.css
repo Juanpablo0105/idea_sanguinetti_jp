@@ -106,9 +106,25 @@ li:hover a{
 
  /* sección servicios */
 
+ .contenedorServicios {
+   padding-bottom: 6%;
+ }
+
+ .contenedorServicios h2{
+  font-size: 72px;
+  margin-left: 12%;
+ }
+
+ .contenedorServicios h3{
+  color: rgb(210, 215, 0);
+  font-size: 40px;
+  margin-left: 12%; 
+ }
+
  .imagenServicios {
   width: 100%;
   padding: 50px;
+  margin-left: 3%;
 
 }
 
@@ -141,18 +157,36 @@ z-index: 5;
  
 /* proyectos */
 
-.contenedorProyectos h2{
+.contenedorProyectos {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+}
+
+.textProyectos {
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(1%, -25%); 
+}
+
+.imagenProyecto{
+  width: 60%;
+}
+.textProyectos h2{
   font-size: 72px;
 }
-.contenedorProyectos h3{
-  font-size: 138px;
+.textProyectos h3{
+  font-size: 100px;
   color: rgb(230, 230, 230);
 }
-.contenedorProyectos p{
-  width: 40%;
+.textProyectos p{
+  width: 60%;
   text-align: justify;
+  margin-left: 32%;
+  
 }
-.contenedorProyectos input{
+.textProyectos input{
   font-size: 14px;
    font-weight: 600;
    color: white;
@@ -166,6 +200,17 @@ z-index: 5;
    text-align: center;
    margin-top: 10px;
    margin-bottom: 10px;
+   margin-left: 32%;
+}
+
+/* seccion contacto */
+
+.contenedorContacto {
+  padding-top: 10%;
+}
+
+.imagenContacto {
+  width: 100%;
 }
 
 
