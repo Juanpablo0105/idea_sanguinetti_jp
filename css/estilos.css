@@ -88,6 +88,7 @@ li:hover a{
    padding: 1%;
 
  }
+ 
 
  .contenedor input{
    font-size: 14px;
@@ -104,6 +105,7 @@ li:hover a{
    margin-top: 10px;
    margin-bottom: 10px;
    margin-left: 10%;
+   border-style: none;
  }
 
  /* sección servicios */
@@ -193,7 +195,7 @@ z-index: 5;
   
 }
 .textProyectos input{
-  font-size: 14px;
+   font-size: 14px;
    font-weight: 600;
    color: white;
    background-color: black;
@@ -207,6 +209,7 @@ z-index: 5;
    margin-top: 10px;
    margin-bottom: 10px;
    margin-left: 32%;
+   border-style: none;
 }
 
 /* seccion contacto */
@@ -261,10 +264,8 @@ z-index: 5;
    margin-top: 10px;
    margin-bottom: 10px;
    margin-left: 1%;
+   border-style: none;
 }
-
-
-
 
 /* footer */
 
@@ -288,6 +289,48 @@ z-index: 5;
   color: white;
   padding: 1rem;
   
+}
+
+/* Sección formulario (pag. de contacto) */
+
+.formContenedor{
+  display: grid;
+  grid-template-columns: 60vw 40vw;
+  align-items: center;
+  grid-gap: 30px;
+
+}
+
+.formulario h2{
+  font-size: 50px;
+  font-weight: 800;
+  padding-bottom: 3px; 
+
+}
+
+.formulario h3{
+  color: rgb(210, 215, 0);
+   font-size: 25px;
+   font-weight: 600;
+   padding-bottom: 20px;
+}
+
+
+.imagenFormulario{
+  display: flex;
+  align-items: center;
+}
+
+.textoFormulario input{
+  width: 300px;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid rgb(135, 137, 138);
+}
+
+.textoFormulario textarea{
+  border-radius: 3px;
+  border: 1px solid rgb(135, 137, 138);
 }
 
 
