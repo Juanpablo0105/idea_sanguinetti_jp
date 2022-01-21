@@ -337,4 +337,62 @@ z-index: 5;
   border: 1px solid rgb(135, 137, 138);
 }
 
+/* Nosotros (sección estudio) */
+
+
+.contenedorNosotros h2{
+ font-size: 62px;
+ font-weight: 800;
+ padding-top: 10%;
+ margin-left: 3%;
+}
+
+.contenedorNosotros h3{
+ color: rgb(210, 215, 0);
+ font-size: 50px; 
+ font-weight: 600;
+ margin-left: 3%;
+}
+
+.contenedorNosotros p{
+  margin-left: 3.3%;
+  font-size: 30px;
+}
+
+.imagenNosotros {
+ width: 100%;
+ padding: 30px;
+ margin-left: 3%;
+
+}
+
+.imagenNosotros:hover{ 
+filter: grayscale(100%);
+z-index: 5;
+}
+
+
+.gridMadre {
+  margin-right: 3%;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: auto;
+ grid-template-areas:
+     "imagenUno imagenDos imagenTres"
+ ;
+}
+
+.imagenUno {
+ grid-area: imagenUno;
+}
+
+.imagenDos {
+ grid-area: imagenDos;
+}
+
+.imagenTres {
+ grid-area: imagenTres;
+}
+
+
 
