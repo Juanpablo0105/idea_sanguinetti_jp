@@ -36,7 +36,7 @@ body {
   display: inline-block;
 }
 
-li:hover a{
+li:hover a {
   color: #d2d700;
 }
 
@@ -61,7 +61,6 @@ li:hover a{
   top: 50%;
   left: 50%;
   transform: translate(-85%, -25%);
-
 }
 
 .imagenEstudio {
@@ -70,86 +69,79 @@ li:hover a{
   float: right;
 }
 
- .contenedor h2{
-   font-size: 72px;
-   margin-left: 10%;
-   font-weight: 800;
- }
+.contenedor h2 {
+  font-size: 72px;
+  margin-left: 10%;
+  font-weight: 800;
+}
 
- .contenedor h3{
-   color: rgb(210, 215, 0);
-   font-size: 40px;
-   margin-left: 10%;
-   font-weight: 600;
+.contenedor h3 {
+  color: rgb(210, 215, 0);
+  font-size: 40px;
+  margin-left: 10%;
+  font-weight: 600;
+}
 
- }
+.contenedor p {
+  width: 80%;
+  text-align: justify;
+  margin-left: 9%;
+  padding: 1%;
+}
 
- .contenedor p{
-   width: 80%;
-   text-align: justify;
-   margin-left: 9%;
-   padding: 1%;
+.contenedor input {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  background-color: black;
+  display: inline-block;
+  transition: all 0.5s;
+  cursor: pointer;
+  padding: 15px 40px !important;
+  text-transform: uppercase;
+  width: fit-content;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10%;
+  border-style: none;
+}
 
- }
- 
+/* sección servicios */
 
- .contenedor input{
-   font-size: 14px;
-   font-weight: 600;
-   color: white;
-   background-color: black;
-   display: inline-block;
-   transition: all .5s;
-   cursor: pointer;
-   padding: 15px 40px !important;
-   text-transform: uppercase;
-   width:  fit-content;
-   text-align: center;
-   margin-top: 10px;
-   margin-bottom: 10px;
-   margin-left: 10%;
-   border-style: none;
- }
+.contenedorServicios {
+  padding-bottom: 3%;
+}
 
- /* sección servicios */
-
- .contenedorServicios {
-   padding-bottom: 3%;
- }
-
- .contenedorServicios h2{
+.contenedorServicios h2 {
   font-size: 72px;
   margin-left: 12%;
   font-weight: 800;
- }
+}
 
- .contenedorServicios h3{
+.contenedorServicios h3 {
   color: rgb(210, 215, 0);
   font-size: 40px;
-  margin-left: 12%; 
+  margin-left: 12%;
   font-weight: 600;
- }
+}
 
- .imagenServicios {
+.imagenServicios {
   width: 100%;
   padding: 50px;
   margin-left: 3%;
-
 }
 
-.imagenServicios:hover{ 
-filter: grayscale(100%);
-z-index: 5;
+.imagenServicios:hover {
+  filter: grayscale(100%);
+  z-index: 5;
 }
 
-
- .gridPadre {
+.gridPadre {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  grid-template-areas:
-      "imagenUno imagenDos imagenTres"
-  ;
+  grid-template-areas: "imagenUno imagenDos imagenTres";
 }
 
 .imagenUno {
@@ -163,7 +155,7 @@ z-index: 5;
 .imagenTres {
   grid-area: imagenTres;
 }
- 
+
 /* proyectos */
 
 .contenedorProyectos {
@@ -176,43 +168,42 @@ z-index: 5;
   position: absolute;
   top: 32%;
   left: 50%;
-  transform: translate(1%, -25%); 
+  transform: translate(1%, -25%);
 }
 
-.imagenProyecto{
+.imagenProyecto {
   width: 60%;
 }
-.textProyectos h2{
+.textProyectos h2 {
   font-size: 72px;
   font-weight: 800;
 }
-.textProyectos h3{
+.textProyectos h3 {
   font-size: 100px;
   color: rgb(230, 230, 230);
   font-weight: 600;
 }
-.textProyectos p{
+.textProyectos p {
   width: 60%;
   text-align: justify;
   margin-left: 32%;
-  
 }
-.textProyectos input{
-   font-size: 14px;
-   font-weight: 600;
-   color: white;
-   background-color: black;
-   display: inline-block;
-   transition: all .5s;
-   cursor: pointer;
-   padding: 15px 40px !important;
-   text-transform: uppercase;
-   width:  fit-content;
-   text-align: center;
-   margin-top: 10px;
-   margin-bottom: 10px;
-   margin-left: 32%;
-   border-style: none;
+.textProyectos input {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  background-color: black;
+  display: inline-block;
+  transition: all 0.5s;
+  cursor: pointer;
+  padding: 15px 40px !important;
+  text-transform: uppercase;
+  width: fit-content;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 32%;
+  border-style: none;
 }
 
 /* seccion contacto */
@@ -228,7 +219,7 @@ z-index: 5;
   position: absolute;
   top: 45%;
   right: 20%;
-  transform: translate(1%, -25%);  
+  transform: translate(1%, -25%);
 }
 
 .imagenContacto {
@@ -237,37 +228,36 @@ z-index: 5;
 
 .textContacto h2 {
   font-size: 62px;
-  margin-left: 1%;  
+  margin-left: 1%;
   font-weight: 800;
 }
 
 .textContacto p {
   width: 80%;
-   text-align: left;
-   margin-left: 1%;
-  
+  text-align: left;
+  margin-left: 1%;
 }
 
 .bold {
   font-weight: 600;
 }
 
-.textContacto input{
+.textContacto input {
   font-size: 14px;
-   font-weight: 600;
-   color: white;
-   background-color: black;
-   display: inline-block;
-   transition: all .5s;
-   cursor: pointer;
-   padding: 15px 40px !important;
-   text-transform: uppercase;
-   width:  fit-content;
-   text-align: center;
-   margin-top: 10px;
-   margin-bottom: 10px;
-   margin-left: 1%;
-   border-style: none;
+  font-weight: 600;
+  color: white;
+  background-color: black;
+  display: inline-block;
+  transition: all 0.5s;
+  cursor: pointer;
+  padding: 15px 40px !important;
+  text-transform: uppercase;
+  width: fit-content;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 1%;
+  border-style: none;
 }
 
 /* footer */
@@ -278,121 +268,130 @@ z-index: 5;
   padding: 20px 0 30px 0;
   margin: auto;
   overflow: hidden;
-
 }
 .footer__redes {
   display: flex;
   flex-direction: row;
   justify-content: center;
-
 }
 
 .footer__redes a {
   text-decoration: none;
   color: white;
   padding: 1rem;
-  
 }
 
 /* Sección formulario (pag. de contacto) */
 
-.formContenedor{
+.formContenedor {
   display: grid;
   grid-template-columns: 60vw 40vw;
   align-items: center;
   grid-gap: 30px;
-
 }
 
-.formulario h2{
-  font-size: 50px;
+.formulario h2 {
+  font-size: 49px;
   font-weight: 800;
-  padding-bottom: 3px; 
-
+  padding-bottom: 3px;
 }
 
-.formulario h3{
+.formulario h3 {
   color: rgb(210, 215, 0);
-   font-size: 25px;
-   font-weight: 600;
-   padding-bottom: 20px;
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 20px;
 }
 
-
-.imagenFormulario{
+.imagenFormulario {
   display: flex;
   align-items: center;
 }
 
-.textoFormulario input{
-  width: 300px;
+.paraRellenar input {
+  width: 355px;
   padding: 10px;
   border-radius: 3px;
   border: 1px solid rgb(135, 137, 138);
+  margin-left: -1px;
 }
 
-
-.textoFormulario textarea{
+.paraRellenar textarea {
   border-radius: 3px;
   border: 1px solid rgb(135, 137, 138);
+  margin-left: -1px;
+  width: 355px;
+}
+.campo {
+  display: block;
+  width: 50%;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+.boton {
+  color: black;
+  background-color: rgb(210, 215, 0);
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.botones .boton {
+  width: 177px;
 }
 
 /* Nosotros (sección estudio) */
 
-
-.contenedorNosotros h2{
- font-size: 62px;
- font-weight: 800;
- padding-top: 10%;
- margin-left: 3%;
+.contenedorNosotros h2 {
+  font-size: 62px;
+  font-weight: 800;
+  padding-top: 10%;
+  margin-left: 3%;
 }
 
-.contenedorNosotros h3{
- color: rgb(210, 215, 0);
- font-size: 50px; 
- font-weight: 600;
- margin-left: 3%;
+.contenedorNosotros h3 {
+  color: rgb(210, 215, 0);
+  font-size: 50px;
+  font-weight: 600;
+  margin-left: 3%;
 }
 
-.contenedorNosotros p{
+.contenedorNosotros p {
   margin-left: 3.3%;
   font-size: 30px;
 }
 
 .imagenNosotros {
- width: 100%;
- padding: 30px;
- margin-left: 3%;
-
+  width: 100%;
+  padding: 30px;
+  margin-left: 3%;
 }
 
-.imagenNosotros:hover{ 
-filter: grayscale(100%);
-z-index: 5;
+.imagenNosotros:hover {
+  filter: grayscale(100%);
+  z-index: 5;
 }
-
 
 .gridMadre {
   margin-right: 3%;
- display: grid;
- grid-template-columns: 1fr 1fr 1fr;
- grid-template-rows: auto;
- grid-template-areas:
-     "imagenUno imagenDos imagenTres"
- ;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "imagenUno imagenDos imagenTres";
 }
 
 .imagenUno {
- grid-area: imagenUno;
+  grid-area: imagenUno;
 }
 
 .imagenDos {
- grid-area: imagenDos;
+  grid-area: imagenDos;
 }
 
 .imagenTres {
- grid-area: imagenTres;
+  grid-area: imagenTres;
 }
-
-
-

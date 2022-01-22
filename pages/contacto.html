@@ -32,45 +32,21 @@
     <h2>FORMULARIO</h2>
     <h3>ESTAMOS EN CONTACTO</h3>
     <section class="textoFormulario">
-      <form action="">
-          <label for="nombre">Nombre</label>
-          <input
-            type="text"
-            name="nombre"
-            id="nombre"
-            placeholder="Nombre"
-            required
-          />
-          <br />
-          <br />
-          <label for="apellido">Apellido</label>
-          <input
-            type="text"
-            name="apellido"
-            id="apellido"
-            placeholder="Apellido"
-            required
-          />
-          <br />
-          <br />
-          <label for="telefono">Teléfono</label>
-          <input type="text" name="telefono" id="telefono" required />
-          <br />
-          <br />
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" required />
-          <br />
-          <br />
-          <label for="mensaje">Mensaje</label>
-          <br />
-          <textarea name="mensaje" id="mensaje" cols="50" rows="8"></textarea>
-          <br />
-          <br />
-          <input type="submit" value="Enviar formulario" />
-          <input type="submit" value="Cancelar" />
-          <br />
-          <br />
-      </form>
+      <form class="paraRellenar">
+        <div class="contenedorInput">
+          <input class="campo" type="text" placeholder="Ingrese su nombre">
+          <input class="campo" type="text" placeholder="Ingrese su apellido">
+          <input class="campo" type="email" placeholder="Ingrese su email">
+      </div>
+      <textarea class="campo" name="mensaje" id="mensaje" cols="30" rows="10"
+          placeholder="Ingrese su mensaje"></textarea>
+      <div class="botones">   
+      <input class="boton" type="submit">
+      <input class="boton" type="reset">
+    </div> 
+    </form>
+    </section>
+    </div>
       </section>
     </div>
   </div>
