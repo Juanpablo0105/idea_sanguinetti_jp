@@ -162,6 +162,7 @@ li:hover a {
   position: relative;
   display: inline-block;
   text-align: left;
+  padding-top: 5%;
 }
 
 .textProyectos {
@@ -169,6 +170,7 @@ li:hover a {
   top: 32%;
   left: 50%;
   transform: translate(1%, -25%);
+  padding-top: 5%;
 }
 
 .imagenProyecto {
