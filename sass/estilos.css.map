@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "../estilos.scss"
+        "estilos.scss"
     ],
     "names": [],
-    "file": "estilos.min.css"
+    "file": "estilos.css"
 }
