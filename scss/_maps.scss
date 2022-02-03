@@ -2,11 +2,13 @@
 
 $estilo: (
     color: rgb(210, 215, 0),
+    espaciado: 50px
 
 );
 
 
 .footer__redes a {
     color: map-get($estilo , color);
+    padding-right:map-get($estilo , espaciado );
 
 }

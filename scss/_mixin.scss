@@ -1,12 +1,11 @@
 // MIXIN
 
-@mixin parrafos {
+@mixin bajada {
     font-weight: 200;
-    font-size: 2rem;
     text-align: right;
-    
+    padding-right: 12%
 }
 
-.parrafosConEstilo {
-    @include parrafos;
+.bajadaTitulo {
+    @include bajada;
 }

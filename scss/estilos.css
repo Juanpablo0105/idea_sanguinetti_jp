@@ -1,5 +1,6 @@
 .footer__redes a {
   color: #d2d700;
+  padding-right: 50px;
 }
 
 .parrafoEstiloUno, .parrafoEstiloDos {
@@ -12,9 +13,9 @@
   text-transform: uppercase;
 }
 
-.parrafosConEstilo {
+.bajadaTitulo {
   font-weight: 200;
-  font-size: 2rem;
   text-align: right;
+  padding-right: 12%;
 }
 /*# sourceMappingURL=estilos.css.map */
