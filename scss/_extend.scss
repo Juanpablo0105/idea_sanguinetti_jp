@@ -1,0 +1,12 @@
+// EXTEND
+
+.parrafoEstiloUno{
+    font-weight: bold;
+    text-align: left;
+    color: dimgray
+}
+
+.parrafoEstiloDos{
+    @extend .parrafoEstiloUno;
+    text-transform: uppercase;   
+}

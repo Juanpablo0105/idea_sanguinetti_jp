@@ -1,0 +1,12 @@
+// MAP GET
+
+$estilo: (
+    color: rgb(210, 215, 0),
+
+);
+
+
+.footer__redes a {
+    color: map-get($estilo , color);
+
+}

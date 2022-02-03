@@ -1,0 +1,12 @@
+// MIXIN
+
+@mixin parrafos {
+    font-weight: 200;
+    font-size: 2rem;
+    text-align: right;
+    
+}
+
+.parrafosConEstilo {
+    @include parrafos;
+}
