@@ -2,12 +2,12 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
   background-color: rgb(255, 255, 255);
-  overflow-x: hidden;
 }
 
 /* header */
@@ -27,13 +27,27 @@ body {
 
 /* navbar */
 
+.header__navbar {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 250px;
+  margin-left: 20px;
+}
+
 .header__navbar ul {
-  padding: 2rem;
+  padding: 1.5rem;
   list-style-type: none;
 }
 
 .header__navbar li {
   display: inline-block;
+  padding-top: 1rem;
 }
 
 li:hover a {
@@ -286,10 +300,11 @@ li:hover a {
 /* Sección formulario (pag. de contacto) */
 
 .formContenedor {
+  padding-top: 50px;
   display: grid;
   grid-template-columns: 60vw 40vw;
   align-items: center;
-  grid-gap: 30px;
+  grid-gap: 50px;
 }
 
 .formulario h2 {
@@ -315,13 +330,13 @@ li:hover a {
   padding: 10px;
   border-radius: 3px;
   border: 1px solid rgb(135, 137, 138);
-  margin-left: -1px;
+  margin-left: 1px;
 }
 
 .paraRellenar textarea {
   border-radius: 3px;
   border: 1px solid rgb(135, 137, 138);
-  margin-left: -1px;
+  margin-left: 1px;
   width: 355px;
 }
 .campo {
@@ -396,4 +411,100 @@ li:hover a {
 
 .imagenTres {
   grid-area: imagenTres;
+}
+
+/* Porfolio (sección proyectos) */
+
+.contenedorPorfolio h2 {
+  font-size: 62px;
+  font-weight: 800;
+  padding-top: 10%;
+  margin-left: 3%;
+}
+
+.contenedorPorfolio h3 {
+  color: rgb(210, 215, 0);
+  font-size: 50px;
+  font-weight: 600;
+  margin-left: 3%;
+}
+
+.contenedorPorfolio p {
+  margin-left: 3.3%;
+  font-size: 30px;
+}
+
+.galery {
+  width: 98%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  margin: 2rem auto;
+}
+
+.galery img {
+  width: 100%;
+  height: auto;
+  transition: all 0.3s;
+}
+
+.galery img:hover {
+  filter: grayscale(100%);
+  z-index: 5;
+}
+
+/* Reformas, Obra Nueva y Decoración (sección servicios)*/
+
+.galeryServicios {
+  width: 98%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  margin: 2rem auto;
+}
+
+.galeryServicios img {
+  width: 100%;
+  height: auto;
+  transition: all 0.3s;
+}
+
+.galeryServicios img:hover {
+  filter: grayscale(100%);
+  z-index: 5;
+}
+
+/* Media Querie */
+
+/* Vista Mobile */
+
+@media only screen and (max-width: 599px) {
+  .gridPadre {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "imagenUno imagenDos imagenTres";
+  }
+
+  .imagenUno {
+    grid-area: imagenUno;
+  }
+
+  .imagenDos {
+    grid-area: imagenDos;
+  }
+
+  .imagenTres {
+    grid-area: imagenTres;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+}
+
+@media screen and (min-width: 1024px) {
 }
