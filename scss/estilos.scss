@@ -1,486 +1,490 @@
 // @import "maps", "extend", "mixin";
 
+$theme-colors: (
+
+  "dark":       black
+
+) ;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+
 * {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    overflow-x: hidden;
-  }
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(255, 255, 255);
   
-  body {
-    font-family: "Montserrat", sans-serif;
-    background-color: rgb(255, 255, 255);
-  }
-  
-  /* header */
-  
-  .header {
-    background-color: black;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: fixed;
-    z-index: 100;
-    width: 100%;
-  }
-  
-  /* navbar */
-  
-  .header__navbar {
+}
+
+/* header */
+
+.header {
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+
+/* navbar */
+
+
+
+.header__navbar {
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .logo {
-    width: 250px;
-    margin-left: 20px;
-  }
-  
-  .header__navbar ul {
-    padding: 1.5rem;
-    list-style-type: none;
-  }
-  
-  .header__navbar li {
-    display: inline-block;
-    padding-top: 1rem;
-  }
-  
-  li:hover a {
-    color: #d2d700;
-  }
-  
-  .header__navbar a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-    font-size: 1.1rem;
-    padding: 1rem;
-  }
-  
-  /* sección estudio */
-  
-  .contenedor {
-    position: relative;
-    display: inline-block;
-    text-align: left;
-  }
-  
-  .text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-85%, -25%);
-  }
-  
-  .imagenEstudio {
-    width: 90%;
-    padding: 5%;
-    float: right;
-  }
-  
-  .contenedor h2 {
-    font-size: 72px;
-    margin-left: 10%;
-    font-weight: 800;
-  }
-  
-  .contenedor h3 {
-    color: rgb(210, 215, 0);
-    font-size: 40px;
-    margin-left: 10%;
-    font-weight: 600;
-  }
-  
-  .contenedor p {
-    width: 80%;
-    text-align: justify;
-    margin-left: 9%;
-    padding: 1%;
-  }
-  
-  .contenedor input {
-    font-size: 14px;
-    font-weight: 600;
-    color: white;
-    background-color: black;
-    display: inline-block;
-    transition: all 0.5s;
-    cursor: pointer;
-    padding: 15px 40px;
-    text-transform: uppercase;
-    width: fit-content;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10%;
-    border-style: none;
-  }
-  
-  /* sección servicios */
-  
-  .contenedorServicios {
-    padding-bottom: 3%;
-  }
-  
-  .contenedorServicios h2 {
-    font-size: 72px;
-    margin-left: 12%;
-    font-weight: 800;
-  }
-  
-  .contenedorServicios h3 {
-    color: rgb(210, 215, 0);
-    font-size: 40px;
-    margin-left: 12%;
-    font-weight: 600;
-  }
-  
-  .imagenServicios {
-    width: 100%;
-    padding: 50px;
-    margin-left: 3%;
-  }
-  
-  .imagenServicios:hover {
-    filter: grayscale(100%);
-    z-index: 5;
-  }
-  
-  .gridPadre {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "imagenUno imagenDos imagenTres";
-  }
-  
-  .imagenUno {
-    grid-area: imagenUno;
-  }
-  
-  .imagenDos {
-    grid-area: imagenDos;
-  }
-  
-  .imagenTres {
-    grid-area: imagenTres;
-  }
-  
-  /* proyectos */
-  
-  .contenedorProyectos {
-    position: relative;
-    display: inline-block;
-    text-align: left;
-    padding-top: 5%;
-  }
-  
-  .textProyectos {
-    position: absolute;
-    top: 32%;
-    left: 50%;
-    transform: translate(1%, -25%);
-    padding-top: 5%;
-  }
-  
-  .imagenProyecto {
-    width: 60%;
-  }
-  .textProyectos h2 {
-    font-size: 72px;
-    font-weight: 800;
-  }
-  .textProyectos h3 {
-    font-size: 100px;
-    color: rgb(230, 230, 230);
-    font-weight: 600;
-  }
-  .textProyectos p {
-    width: 60%;
-    text-align: justify;
-    margin-left: 32%;
-  }
-  .textProyectos input {
-    font-size: 14px;
-    font-weight: 600;
-    color: white;
-    background-color: black;
-    display: inline-block;
-    transition: all 0.5s;
-    cursor: pointer;
-    padding: 15px 40px;
-    text-transform: uppercase;
-    width: fit-content;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 32%;
-    border-style: none;
-  }
-  
-  /* seccion contacto */
-  
-  .contenedorContacto {
-    padding-top: 10%;
-    position: relative;
-    display: inline-block;
-    text-align: left;
-  }
-  
-  .textContacto {
-    position: absolute;
-    top: 45%;
-    right: 20%;
-    transform: translate(1%, -25%);
-  }
-  
-  .imagenContacto {
-    width: 100%;
-  }
-  
-  .textContacto h2 {
-    font-size: 62px;
-    margin-left: 1%;
-    font-weight: 800;
-  }
-  
-  .textContacto p {
-    width: 80%;
-    text-align: left;
-    margin-left: 1%;
-  }
-  
-  .bold {
-    font-weight: 600;
-  }
-  
-  .textContacto input {
-    font-size: 14px;
-    font-weight: 600;
-    color: white;
-    background-color: black;
-    display: inline-block;
-    transition: all 0.5s;
-    cursor: pointer;
-    padding: 15px 40px;
-    text-transform: uppercase;
-    width: fit-content;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 1%;
-    border-style: none;
-  }
-  
-  /* footer */
-  
-  .footer {
-    background-color: black;
-    width: 100%;
-    padding: 20px 0 30px 0;
-    margin: auto;
-    overflow-x: hidden;
-  }
-  .footer__redes {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  
-  .footer__redes a {
-    text-decoration: none;
-    color: white;
-    padding: 1rem;
-  }
-  
-  /* Sección formulario (pag. de contacto) */
-  
-  .formContenedor {
-    padding-top: 50px;
-    display: grid;
-    grid-template-columns: 60vw 40vw;
-    align-items: center;
-    grid-gap: 50px;
-  }
-  
-  .formulario h2 {
-    font-size: 49px;
-    font-weight: 800;
-    padding-bottom: 3px;
-  }
-  
-  .formulario h3 {
-    color: rgb(210, 215, 0);
-    font-size: 25px;
-    font-weight: 600;
-    padding-bottom: 20px;
-  }
-  
-  .imagenFormulario {
-    display: flex;
-    align-items: center;
-  }
-  
-  .paraRellenar input {
-    width: 355px;
-    padding: 10px;
-    border-radius: 3px;
-    border: 1px solid rgb(135, 137, 138);
-    margin-left: 1px;
-  }
-  
-  .paraRellenar textarea {
-    border-radius: 3px;
-    border: 1px solid rgb(135, 137, 138);
-    margin-left: 1px;
-    width: 355px;
-  }
-  .campo {
-    display: block;
-    width: 50%;
-    padding: 10px;
-    margin: 10px auto;
-  }
-  
-  .boton {
-    color: black;
-    background-color: rgb(210, 215, 0);
-    padding: 10px;
-    text-transform: uppercase;
-    font-weight: bold;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .botones .boton {
-    width: 177px;
-  }
-  
-  /* Nosotros (sección estudio) */
-  
-  .contenedorNosotros h2 {
-    font-size: 62px;
-    font-weight: 800;
-    padding-top: 10%;
-    margin-left: 3%;
-  }
-  
-  .contenedorNosotros h3 {
-    color: rgb(210, 215, 0);
-    font-size: 50px;
-    font-weight: 600;
-    margin-left: 3%;
-  }
-  
-  .contenedorNosotros p {
-    margin-left: 3.3%;
-    font-size: 30px;
-  }
-  
-  .imagenNosotros {
-    width: 100%;
-    padding: 30px;
-    margin-left: 3%;
-  }
-  
-  .imagenNosotros:hover {
-    filter: grayscale(100%);
-    z-index: 5;
-  }
-  
-  .gridMadre {
-    margin-right: 3%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "imagenUno imagenDos imagenTres";
-  }
-  
-  .imagenUno {
-    grid-area: imagenUno;
-  }
-  
-  .imagenDos {
-    grid-area: imagenDos;
-  }
-  
-  .imagenTres {
-    grid-area: imagenTres;
-  }
-  
-  /* Porfolio (sección proyectos) */
-  
-  .contenedorPorfolio h2 {
-    font-size: 62px;
-    font-weight: 800;
-    padding-top: 10%;
-    margin-left: 3%;
-  }
-  
-  .contenedorPorfolio h3 {
-    color: rgb(210, 215, 0);
-    font-size: 50px;
-    font-weight: 600;
-    margin-left: 3%;
-  }
-  
-  .contenedorPorfolio p {
-    margin-left: 3.3%;
-    font-size: 30px;
-  }
-  
-  .galery {
-    width: 98%;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    padding: 2rem;
-    margin: 2rem auto;
-  }
-  
-  .galery img {
-    width: 100%;
-    height: auto;
-    transition: all 0.3s;
-  }
-  
-  .galery img:hover {
-    filter: grayscale(100%);
-    z-index: 5;
-  }
-  
-  /* Reformas, Obra Nueva y Decoración (sección servicios)*/
-  
-  .galeryServicios {
-    width: 98%;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 2rem;
-    padding: 2rem;
-    margin: 2rem auto;
-  }
-  
-  .galeryServicios img {
-    width: 100%;
-    height: auto;
-    transition: all 0.3s;
-  }
-  
-  .galeryServicios img:hover {
-    filter: grayscale(100%);
-    z-index: 5;
-  }
-  
-  /* Media Querie */
+}
+
+.logo{
+  width: 40px;
+  margin-left: 20px;
+  }
+
+.header__navbar ul {
+  padding: 1.5rem;
+  list-style-type: none;
+}
+
+.header__navbar li {
+  display: inline-block;
+  padding-top: 1rem;
+}
+
+li:hover a {
+  color: rgb(252, 252, 246);
+}
+
+.header__navbar a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(211, 206, 206);
+  font-size: 1rem;
+  padding: 1rem;
+  font-weight: 500;
+}
+
+
+/* sección estudio */
+
+.contenedor {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-85%, -25%);
+}
+
+.imagenEstudio {
+  width: 90%;
+  padding: 5%;
+  float: right;
+}
+
+.contenedor h2 {
+  font-size: 72px;
+  margin-left: 10%;
+  font-weight: 800;
+}
+
+.contenedor h3 {
+  color: rgb(210, 215, 0);
+  font-size: 40px;
+  margin-left: 10%;
+  font-weight: 600;
+}
+
+.contenedor p {
+  width: 80%;
+  text-align: justify;
+  margin-left: 9%;
+  padding: 1%;
+}
+
+.contenedor input {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  background-color: black;
+  display: inline-block;
+  transition: all 0.5s;
+  cursor: pointer;
+  padding: 15px 40px;
+  text-transform: uppercase;
+  width: fit-content;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10%;
+  border-style: none;
+}
+
+/* sección servicios */
+
+.contenedorServicios {
+  padding-bottom: 3%;
+}
+
+.contenedorServicios h2 {
+  font-size: 72px;
+  margin-left: 12%;
+  font-weight: 800;
+}
+
+.contenedorServicios h3 {
+  color: rgb(210, 215, 0);
+  font-size: 40px;
+  margin-left: 12%;
+  font-weight: 600;
+}
+
+.imagenServicios {
+  width: 100%;
+  padding: 50px;
+  margin-left: 3%;
+}
+
+.imagenServicios:hover {
+  filter: grayscale(100%);
+  z-index: 5;
+}
+
+.gridPadre {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "imagenUno imagenDos imagenTres";
+}
+
+.imagenUno {
+  grid-area: imagenUno;
+}
+
+.imagenDos {
+  grid-area: imagenDos;
+}
+
+.imagenTres {
+  grid-area: imagenTres;
+}
+
+/* proyectos */
+
+.contenedorProyectos {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  padding-top: 5%;
+}
+
+.textProyectos {
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(1%, -25%);
+  padding-top: 5%;
+}
+
+.imagenProyecto {
+  width: 60%;
+}
+.textProyectos h2 {
+  font-size: 72px;
+  font-weight: 800;
+}
+.textProyectos h3 {
+  font-size: 100px;
+  color: rgb(230, 230, 230);
+  font-weight: 600;
+}
+.textProyectos p {
+  width: 60%;
+  text-align: justify;
+  margin-left: 32%;
+}
+.textProyectos input {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  background-color: black;
+  display: inline-block;
+  transition: all 0.5s;
+  cursor: pointer;
+  padding: 15px 40px;
+  text-transform: uppercase;
+  width: fit-content;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 32%;
+  border-style: none;
+}
+
+/* seccion contacto */
+
+.contenedorContacto {
+  padding-top: 10%;
+  position: relative;
+  display: inline-block;
+  text-align: left;
+}
+
+.textContacto {
+  position: absolute;
+  top: 45%;
+  right: 20%;
+  transform: translate(1%, -25%);
+}
+
+.imagenContacto {
+  width: 100%;
+}
+
+.textContacto h2 {
+  font-size: 62px;
+  margin-left: 1%;
+  font-weight: 800;
+}
+
+.textContacto p {
+  width: 80%;
+  text-align: left;
+  margin-left: 1%;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.textContacto input {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  background-color: black;
+  display: inline-block;
+  transition: all 0.5s;
+  cursor: pointer;
+  padding: 15px 40px;
+  text-transform: uppercase;
+  width: fit-content;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 1%;
+  border-style: none;
+}
+
+/* footer */
+
+.footer {
+  background-color: black;
+  width: 100%;
+  padding: 20px 0 30px 0;
+  margin: auto;
+  overflow-x: hidden;
+}
+.footer__redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer__redes a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+/* Sección formulario (pag. de contacto) */
+
+.formContenedor {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 60vw 40vw;
+  align-items: center;
+  grid-gap: 50px;
+}
+
+.formulario h2 {
+  font-size: 49px;
+  font-weight: 800;
+  padding-bottom: 3px;
+}
+
+.formulario h3 {
+  color: rgb(210, 215, 0);
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.imagenFormulario {
+  display: flex;
+  align-items: center;
+}
+
+.paraRellenar input {
+  width: 355px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid rgb(135, 137, 138);
+  margin-left: 1px;
+}
+
+.paraRellenar textarea {
+  border-radius: 3px;
+  border: 1px solid rgb(135, 137, 138);
+  margin-left: 1px;
+  width: 355px;
+}
+.campo {
+  display: block;
+  width: 50%;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+.boton {
+  color: black;
+  background-color: rgb(210, 215, 0);
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.botones .boton {
+  width: 177px;
+}
+
+/* Nosotros (sección estudio) */
+
+.contenedorNosotros h2 {
+  font-size: 62px;
+  font-weight: 800;
+  padding-top: 10%;
+  margin-left: 3%;
+}
+
+.contenedorNosotros h3 {
+  color: rgb(210, 215, 0);
+  font-size: 50px;
+  font-weight: 600;
+  margin-left: 3%;
+}
+
+.contenedorNosotros p {
+  margin-left: 3.3%;
+  font-size: 30px;
+}
+
+.imagenNosotros {
+  width: 100%;
+  padding: 30px;
+  margin-left: 3%;
+}
+
+.imagenNosotros:hover {
+  filter: grayscale(100%);
+  z-index: 5;
+}
+
+
+/* Porfolio (sección proyectos) */
+
+.contenedorPorfolio h2{
+  font-size: 62px;
+  font-weight: 800;
+  padding-top: 10%;
+  margin-left: 3%;
+}
+
+.contenedorPorfolio h3{
+  color: rgb(210, 215, 0);
+  font-size: 50px;
+  font-weight: 600;
+  margin-left: 3%;
+}
+
+.contenedorPorfolio p{
+  margin-left: 3.3%;
+  font-size: 30px;
+}
+
+.galery{
+  width: 98%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem ;
+  margin: 2rem auto;
+}
+
+.galery  img {
+  width: 100%;
+  height: auto;
+  transition: all 0.3s;
+}
+
+.galery  img:hover{
+ 
+  filter: grayscale(100%);
+  z-index: 5;
+  
+}
+
+/* Reformas, Obra Nueva y Decoración (sección servicios)*/
+
+.galeryServicios {
+  width: 98%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  padding: 2rem ;
+  margin: 2rem auto;
+}
+
+.galeryServicios  img {
+  width: 100%;
+  height: auto;
+  transition: all 0.3s;
+}
+
+.galeryServicios  img:hover{
+ 
+  filter: grayscale(100%);
+  z-index: 5;
+  
+}
+
+
+
+
+/* Media Querie */
 
 /* Vista Mobile */
 
@@ -537,12 +541,6 @@
   margin-left: 3%;
 }
 
-.imagenNosotros:hover {
-  filter: grayscale(100%);
-  z-index: 5;
-}
-
-
 /* servicios */
 
 .contenedorServicios h2 {
@@ -553,7 +551,12 @@
   font-size: 20px;
 }
 
+.imagenServicios {
+  width: 80%;
+  padding: 30px;
+}
   .gridPadre {
+    margin-left: 6%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
@@ -564,18 +567,31 @@
         ;
   }
   
-  .imagenUno {
-    grid-area: imagenUno;
-  }
-  
-  .imagenDos {
-    grid-area: imagenDos;
-  }
-  
-  .imagenTres {
-    grid-area: imagenTres;
-  }
  
+/* sección estudio */
+
+
+.contenedor h2 {
+  font-size: 40px;
+}
+
+.contenedor h3 {
+  font-size: 20px;
+}
+
+.contenedor p {
+  width: 83%;
+  font-size: 8px;
+}
+
+.contenedor input {
+  font-size: 10px;
+}
+
+.text {
+  top: 55%;
+}
+
 /* proyectos */
 
 .textProyectos {
@@ -615,6 +631,58 @@
   margin-left: 45%;
   border-style: none;
 }
+
+
+/* seccion contacto */
+
+
+.textContacto {
+  position: absolute;
+  top: 55%;
+  right: 2%;
+  transform: translate(1%, -25%);
+}
+
+
+.textContacto h2 {
+  font-size: 35px;
+  margin-left: 1%;
+  font-weight: 800;
+}
+
+.textContacto p {
+  display: none;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.textContacto input {
+  font-size: 10px;
+  font-weight: 600;
+  color: white;
+  background-color: black;
+  display: inline-block;
+  transition: all 0.5s;
+  cursor: pointer;
+  padding: 15px 40px;
+  text-transform: uppercase;
+  width: fit-content;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 1%;
+  border-style: none;
+}
+
+
+
+
+
+
+
+
 
 }
 
