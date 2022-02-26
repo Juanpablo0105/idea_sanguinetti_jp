@@ -11130,6 +11130,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow-y: hidden;
 }
 
 .logo {
@@ -11185,6 +11186,7 @@ li:hover a {
   font-size: 72px;
   margin-left: 10%;
   font-weight: 800;
+  color: black;
 }
 
 .contenedor h3, .contenedor .h3 {
@@ -11231,6 +11233,7 @@ li:hover a {
   font-size: 72px;
   margin-left: 12%;
   font-weight: 800;
+  color: black;
 }
 
 .contenedorServicios h3, .contenedorServicios .h3 {
@@ -11304,6 +11307,7 @@ li:hover a {
 .textProyectos h2, .textProyectos .h2 {
   font-size: 72px;
   font-weight: 800;
+  color: black;
 }
 
 .textProyectos h3, .textProyectos .h3 {
@@ -11363,6 +11367,7 @@ li:hover a {
   font-size: 62px;
   margin-left: 1%;
   font-weight: 800;
+  color: black;
 }
 
 .textContacto p {
@@ -11422,6 +11427,109 @@ li:hover a {
   text-decoration: none;
   color: white;
   padding: 1rem;
+}
+
+/* Nosotros (sección estudio) */
+.contenedorNosotros h2, .contenedorNosotros .h2 {
+  font-size: 62px;
+  font-weight: 800;
+  padding-top: 10%;
+  margin-left: 3%;
+}
+
+.contenedorNosotros h3, .contenedorNosotros .h3 {
+  color: #d2d700;
+  font-size: 50px;
+  font-weight: 600;
+  margin-left: 3%;
+}
+
+.contenedorNosotros p {
+  margin-left: 3.3%;
+  font-size: 30px;
+}
+
+.imagenNosotros {
+  width: 100%;
+  padding: 30px;
+  margin-left: 3%;
+}
+
+.imagenNosotros:hover {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  z-index: 5;
+}
+
+/* Reformas, Obra Nueva y Decoración (sección servicios)*/
+.galeryServicios {
+  width: 98%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  margin: 2rem auto;
+}
+
+.galeryServicios img {
+  width: 100%;
+  height: auto;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.galeryServicios img:hover {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  z-index: 5;
+}
+
+/* Porfolio (sección proyectos) */
+.contenedorPorfolio h2, .contenedorPorfolio .h2 {
+  font-size: 62px;
+  font-weight: 800;
+  padding-top: 10%;
+  margin-left: 3%;
+}
+
+.contenedorPorfolio h3, .contenedorPorfolio .h3 {
+  color: #d2d700;
+  font-size: 50px;
+  font-weight: 600;
+  margin-left: 3%;
+}
+
+.contenedorPorfolio p {
+  margin-left: 3.3%;
+  font-size: 30px;
+}
+
+.galery {
+  width: 98%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  margin: 2rem auto;
+}
+
+.galery img {
+  width: 100%;
+  height: auto;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.galery img:hover {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  z-index: 5;
 }
 
 /* Sección formulario (pag. de contacto) */
@@ -11496,112 +11604,94 @@ li:hover a {
   width: 177px;
 }
 
-/* Nosotros (sección estudio) */
-.contenedorNosotros h2, .contenedorNosotros .h2 {
-  font-size: 62px;
-  font-weight: 800;
-  padding-top: 10%;
-  margin-left: 3%;
-}
-
-.contenedorNosotros h3, .contenedorNosotros .h3 {
-  color: #d2d700;
-  font-size: 50px;
-  font-weight: 600;
-  margin-left: 3%;
-}
-
-.contenedorNosotros p {
-  margin-left: 3.3%;
-  font-size: 30px;
-}
-
-.imagenNosotros {
-  width: 100%;
-  padding: 30px;
-  margin-left: 3%;
-}
-
-.imagenNosotros:hover {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  z-index: 5;
-}
-
-/* Porfolio (sección proyectos) */
-.contenedorPorfolio h2, .contenedorPorfolio .h2 {
-  font-size: 62px;
-  font-weight: 800;
-  padding-top: 10%;
-  margin-left: 3%;
-}
-
-.contenedorPorfolio h3, .contenedorPorfolio .h3 {
-  color: #d2d700;
-  font-size: 50px;
-  font-weight: 600;
-  margin-left: 3%;
-}
-
-.contenedorPorfolio p {
-  margin-left: 3.3%;
-  font-size: 30px;
-}
-
-.galery {
-  width: 98%;
-  height: auto;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  padding: 2rem;
-  margin: 2rem auto;
-}
-
-.galery img {
-  width: 100%;
-  height: auto;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.galery img:hover {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  z-index: 5;
-}
-
-/* Reformas, Obra Nueva y Decoración (sección servicios)*/
-.galeryServicios {
-  width: 98%;
-  height: auto;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[1];
-      grid-template-columns: repeat(1, 1fr);
-  gap: 2rem;
-  padding: 2rem;
-  margin: 2rem auto;
-}
-
-.galeryServicios img {
-  width: 100%;
-  height: auto;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.galeryServicios img:hover {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  z-index: 5;
-}
-
 /* Media Querie */
 /* Vista Mobile */
 @media only screen and (max-width: 599px) {
+  /* sección estudio */
+  .text {
+    top: 45%;
+    left: 45%;
+  }
+  .imagenEstudio {
+    width: 95%;
+  }
+  .contenedor h2, .contenedor .h2 {
+    font-size: 40px;
+    margin-left: 0;
+  }
+  .contenedor h3, .contenedor .h3 {
+    font-size: 20px;
+    margin-left: 0;
+  }
+  .contenedor p {
+    display: none;
+  }
+  .contenedor input {
+    font-size: 10px;
+    margin-left: 0;
+    padding: 7px 18px;
+  }
+  .text {
+    top: 55%;
+  }
+  /* Nosotros */
+  .contenedorNosotros h2, .contenedorNosotros .h2 {
+    font-size: 40px;
+    padding-top: 25%;
+    margin-left: 6%;
+  }
+  .contenedorNosotros h3, .contenedorNosotros .h3 {
+    font-size: 30px;
+    margin-left: 6%;
+  }
+  .contenedorNosotros p {
+    margin-left: 6%;
+    font-size: 15px;
+  }
+  /* servicios */
+  .contenedorServicios h2, .contenedorServicios .h2 {
+    font-size: 40px;
+  }
+  .contenedorServicios h3, .contenedorServicios .h3 {
+    font-size: 20px;
+  }
+  .imagenServicios {
+    width: 90%;
+    padding: 25px;
+  }
+  .gridPadre {
+    margin-left: 6%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "imagenUno" "imagenDos" "imagenTres";
+  }
+  /* proyectos */
+  .textProyectos {
+    position: absolute;
+    top: 30%;
+    left: 38%;
+    -webkit-transform: translate(1%, -25%);
+            transform: translate(1%, -25%);
+    padding-top: 5%;
+  }
+  .textProyectos h2, .textProyectos .h2 {
+    font-size: 40px;
+  }
+  .textProyectos h3, .textProyectos .h3 {
+    display: none;
+  }
+  .textProyectos p {
+    display: none;
+  }
+  .textProyectos input {
+    font-size: 10px;
+    padding: 7px 18px;
+    margin-left: 60%;
+  }
   /* porfolio */
   .galery {
     width: 98%;
@@ -11627,6 +11717,89 @@ li:hover a {
     font-size: 15px;
     margin-left: 6%;
   }
+  /* seccion contacto */
+  .textContacto {
+    position: absolute;
+    top: 50%;
+    right: 25%;
+    -webkit-transform: translate(1%, -25%);
+            transform: translate(1%, -25%);
+  }
+  .textContacto h2, .textContacto .h2 {
+    font-size: 35px;
+  }
+  .textContacto p {
+    display: none;
+  }
+  .textContacto input {
+    font-size: 10px;
+    padding: 7px 18px;
+    margin-left: 15%;
+  }
+  /* Sección formulario (pag. de contacto) */
+  .formContenedor {
+    padding-top: 130px;
+    -ms-grid-columns: 100vw;
+        grid-template-columns: 100vw;
+    grid-gap: 2000px;
+    padding-bottom: 80px;
+  }
+  .formulario h2, .formulario .h2 {
+    font-size: 30px;
+    margin-left: 60px;
+  }
+  .formulario h3, .formulario .h3 {
+    font-size: 15px;
+    margin-left: 60px;
+  }
+  .imagenFormulario {
+    display: none;
+  }
+  .paraRellenar input {
+    width: 420px;
+    padding: 10px;
+    margin-left: 60px;
+  }
+  .paraRellenar textarea {
+    margin-left: 60px;
+    width: 420px;
+  }
+  .campo {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    margin: 10px auto;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+  /* sección estudio */
+  .text {
+    top: 45%;
+    left: 45%;
+  }
+  .imagenEstudio {
+    width: 95%;
+  }
+  .contenedor h2, .contenedor .h2 {
+    font-size: 50px;
+    margin-left: 0;
+  }
+  .contenedor h3, .contenedor .h3 {
+    font-size: 30px;
+    margin-left: 0;
+  }
+  .contenedor p {
+    display: none;
+  }
+  .contenedor input {
+    font-size: 12px;
+    margin-left: 0;
+    padding: 9px 20px;
+  }
+  .text {
+    top: 55%;
+  }
   /* Nosotros */
   .contenedorNosotros h2, .contenedorNosotros .h2 {
     font-size: 40px;
@@ -11641,21 +11814,16 @@ li:hover a {
     margin-left: 6%;
     font-size: 15px;
   }
-  .imagenNosotros {
-    width: 100%;
-    padding: 30px;
-    margin-left: 3%;
-  }
   /* servicios */
   .contenedorServicios h2, .contenedorServicios .h2 {
-    font-size: 40px;
+    font-size: 50px;
   }
   .contenedorServicios h3, .contenedorServicios .h3 {
-    font-size: 20px;
+    font-size: 30px;
   }
   .imagenServicios {
-    width: 80%;
-    padding: 30px;
+    width: 70%;
+    padding: 25px;
   }
   .gridPadre {
     margin-left: 6%;
@@ -11665,24 +11833,7 @@ li:hover a {
         grid-template-columns: 1fr;
     -ms-grid-rows: auto auto auto;
         grid-template-rows: auto auto auto;
-        grid-template-areas: "imagenUno"  "imagenDos" "imagenTres";
-  }
-  /* sección estudio */
-  .contenedor h2, .contenedor .h2 {
-    font-size: 40px;
-  }
-  .contenedor h3, .contenedor .h3 {
-    font-size: 20px;
-  }
-  .contenedor p {
-    width: 83%;
-    font-size: 8px;
-  }
-  .contenedor input {
-    font-size: 10px;
-  }
-  .text {
-    top: 55%;
+        grid-template-areas: "imagenUno" "imagenDos" "imagenTres";
   }
   /* proyectos */
   .textProyectos {
@@ -11693,76 +11844,97 @@ li:hover a {
             transform: translate(1%, -25%);
     padding-top: 5%;
   }
-  .imagenProyecto {
-    width: 60%;
-  }
   .textProyectos h2, .textProyectos .h2 {
-    font-size: 40px;
+    font-size: 50px;
   }
   .textProyectos h3, .textProyectos .h3 {
-    font-size: 50px;
+    display: none;
   }
   .textProyectos p {
     display: none;
   }
   .textProyectos input {
-    font-size: 10px;
-    font-weight: 600;
-    color: white;
-    background-color: black;
-    display: inline-block;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-    cursor: pointer;
-    padding: 15px 40px;
-    text-transform: uppercase;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 45%;
-    border-style: none;
+    font-size: 12px;
+    padding: 9px 20px;
+    margin-left: 60%;
+  }
+  /* porfolio */
+  .galery {
+    width: 98%;
+    height: auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    margin: 2rem auto;
+  }
+  .contenedorPorfolio h2, .contenedorPorfolio .h2 {
+    font-size: 40px;
+    padding-top: 25%;
+    margin-left: 6%;
+  }
+  .contenedorPorfolio h3, .contenedorPorfolio .h3 {
+    font-size: 30px;
+    margin-left: 6%;
+  }
+  .contenedorPorfolio p {
+    font-size: 15px;
+    margin-left: 6%;
   }
   /* seccion contacto */
   .textContacto {
     position: absolute;
-    top: 55%;
-    right: 2%;
+    top: 50%;
+    right: 25%;
     -webkit-transform: translate(1%, -25%);
             transform: translate(1%, -25%);
   }
   .textContacto h2, .textContacto .h2 {
-    font-size: 35px;
-    margin-left: 1%;
-    font-weight: 800;
+    font-size: 45px;
   }
   .textContacto p {
     display: none;
   }
-  .bold {
-    font-weight: 600;
-  }
   .textContacto input {
-    font-size: 10px;
-    font-weight: 600;
-    color: white;
-    background-color: black;
-    display: inline-block;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-    cursor: pointer;
-    padding: 15px 40px;
-    text-transform: uppercase;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 1%;
-    border-style: none;
+    font-size: 12px;
+    padding: 9px 20px;
+    margin-left: 15%;
+  }
+  /* Sección formulario (pag. de contacto) */
+  .formContenedor {
+    padding-top: 130px;
+    -ms-grid-columns: 100vw;
+        grid-template-columns: 100vw;
+    grid-gap: 2000px;
+    padding-bottom: 80px;
+  }
+  .formulario h2, .formulario .h2 {
+    font-size: 30px;
+    margin-left: 80px;
+  }
+  .formulario h3, .formulario .h3 {
+    font-size: 15px;
+    margin-left: 80px;
+  }
+  .imagenFormulario {
+    display: none;
+  }
+  .paraRellenar input {
+    width: 420px;
+    padding: 10px;
+    margin-left: 80px;
+  }
+  .paraRellenar textarea {
+    margin-left: 80px;
+    width: 420px;
+  }
+  .campo {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    margin: 10px auto;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
